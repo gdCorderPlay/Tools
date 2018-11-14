@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<version>
+  <texture_0_1>
+    <texture value="0_1" />
+    <MainTitle value="制退机力(0度)" />
+    <VTitle value="制退机力 (N)" />
+    <Min value="-200000" />
+    <Max value="600000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="01" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_1>
+  <texture_0_2>
+    <texture value="0_2" />
+    <MainTitle value="复进机力(0度)" />
+    <VTitle value="复进机力z (N)" />
+    <Min value="40000" />
+    <Max value="140000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="02" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_2>
+  <texture_0_3>
+    <texture value="0_3" />
+    <MainTitle value="高平机力(0度)" />
+    <VTitle value="高平机力 (N)" />
+    <Min value="2840000" />
+    <Max value="3040000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="03" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_3>
+  <texture_0_4>
+    <texture value="0_4" />
+    <MainTitle value="座圈力(0度)" />
+    <VTitle value="座圈力(X,Y,Z) (N)" />
+    <Min value="-400000" />
+    <Max value="400000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="04" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_4>
+  <texture_0_5>
+    <texture value="0_5" />
+    <MainTitle value="座圈力矩(0度)" />
+    <VTitle value="座圈力矩(X,Y,Z) (N·mm)" />
+    <Min value="-400000000" />
+    <Max value="400000000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="04" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_5>
+  <texture_0_6>
+    <texture value="0_6" />
+    <MainTitle value="左大架油缸力(0度)" />
+    <VTitle value="左大架油缸力 (N)" />
+    <Min value="-50000" />
+    <Max value="150000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="06" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_6>
+  <texture_0_7>
+    <texture value="0_7" />
+    <MainTitle value="右大架油缸力(0度)" />
+    <VTitle value="右大架油缸力 (N)" />
+    <Min value="-80000" />
+    <Max value="320000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="07" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_7>
+  <texture_0_8>
+    <texture value="0_8" />
+    <MainTitle value="左千斤顶力(0度)" />
+    <VTitle value="左千斤顶力(X,Y,Z) (N)" />
+    <Min value="-80000" />
+    <Max value="240000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="08" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_8>
+  <texture_0_9>
+    <texture value="0_9" />
+    <MainTitle value="右千斤顶力(0度)" />
+    <VTitle value="右千斤顶力(X,Y,Z) (N)" />
+    <Min value="-120000" />
+    <Max value="180000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="09" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_9>
+  <texture_0_10>
+    <texture value="0_10" />
+    <MainTitle value="座盘力(0度)" />
+    <VTitle value="座盘力(X,Y,Z) (N)" />
+    <Min value="-40000" />
+    <Max value="120000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="010" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_10>
+  <texture_0_11>
+    <texture value="0_11" />
+    <MainTitle value="左驻锄力(0度)" />
+    <VTitle value="左驻锄力(X,Y,Z) (N)" />
+    <Min value="-150000" />
+    <Max value="100000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="011" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_11>
+  <texture_0_12>
+    <texture value="0_12" />
+    <MainTitle value="右驻锄力(0度)" />
+    <VTitle value="右驻锄力(X,Y,Z) (N)" />
+    <Min value="-240000" />
+    <Max value="160000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="012" />
+    <K value="1" />
+    <Time value="18000" />
+    <RealTime value="18000" />
+  </texture_0_12>
+  <texture_0_13>
+    <texture value="0_13" />
+    <MainTitle value="弹丸章动角(0度)" />
+    <VTitle value="章动角(°)" />
+    <Min value="-18000" />
+    <Max value="6000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="013" />
+    <K value="6" />
+    <Time value="1800" />
+    <RealTime value="18000" />
+  </texture_0_13>
+  <texture_0_14>
+    <texture value="0_14" />
+    <MainTitle value="弹丸加速度(0度)" />
+    <VTitle value="加速度(g)" />
+    <Min value="-4000" />
+    <Max value="12000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="013" />
+    <K value="1" />
+    <Time value="1200" />
+    <RealTime value="18000" />
+  </texture_0_14>
+  <texture_0_15>
+    <texture value="0_15" />
+    <MainTitle value="弹丸章动角(0度)" />
+    <VTitle value="章动角(°)" />
+    <Min value="-18000" />
+    <Max value="6000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="013" />
+    <K value="6" />
+    <Time value="1800" />
+    <RealTime value="1758" />
+  </texture_0_15>
+  <texture_20_1>
+    <texture value="20_1" />
+    <MainTitle value="制退机力(20度)" />
+    <VTitle value="制退机力 (N)" />
+    <Min value="-200000" />
+    <Max value="600000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="201" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="18000" />
+  </texture_20_1>
+  <texture_20_2>
+    <texture value="20_2" />
+    <MainTitle value="复进机力(20度)" />
+    <VTitle value="复进机力z (N)" />
+    <Min value="40000" />
+    <Max value="140000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="202" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="18000" />
+  </texture_20_2>
+  <texture_20_3>
+    <texture value="20_3" />
+    <MainTitle value="高平机力(20度)" />
+    <VTitle value="高平机力 (N)" />
+    <Min value="1670000" />
+    <Max value="1720000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="203" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="18000" />
+  </texture_20_3>
+  <texture_20_4>
+    <texture value="20_4" />
+    <MainTitle value="座圈力(20度)" />
+    <VTitle value="座圈力(X,Y,Z) (N)" />
+    <Min value="-600000" />
+    <Max value="400000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="204" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="18000" />
+  </texture_20_4>
+  <texture_20_5>
+    <texture value="20_5" />
+    <MainTitle value="座圈力矩(20度)" />
+    <VTitle value="座圈力矩(X,Y,Z) (N·mm)" />
+    <Min value="-400000000" />
+    <Max value="400000000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="205" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_5>
+  <texture_20_6>
+    <texture value="20_6" />
+    <MainTitle value="左大架油缸力(20度)" />
+    <VTitle value="左大架油缸力 (N)" />
+    <Min value="30000" />
+    <Max value="180000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="206" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_6>
+  <texture_20_7>
+    <texture value="20_7" />
+    <MainTitle value="右大架油缸力(20度)" />
+    <VTitle value="右大架油缸力 (N)" />
+    <Min value="30000" />
+    <Max value="180000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="207" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_7>
+  <texture_20_8>
+    <texture value="20_8" />
+    <MainTitle value="左千斤顶力(20度)" />
+    <VTitle value="左千斤顶力(X,Y,Z) (N)" />
+    <Min value="-50000" />
+    <Max value="200000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="208" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_8>
+  <texture_20_9>
+    <texture value="20_9" />
+    <MainTitle value="右千斤顶力(20度)" />
+    <VTitle value="右千斤顶力(X,Y,Z) (N)" />
+    <Min value="-50000" />
+    <Max value="200000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="209" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_9>
+  <texture_20_10>
+    <texture value="20_10" />
+    <MainTitle value="座盘力(20度)" />
+    <VTitle value="座盘力(X,Y,Z) (N)" />
+    <Min value="-80000" />
+    <Max value="320000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="2010" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_10>
+  <texture_20_11>
+    <texture value="20_11" />
+    <MainTitle value="左驻锄力(20度)" />
+    <VTitle value="左驻锄力(X,Y,Z) (N)" />
+    <Min value="-210000" />
+    <Max value="140000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="2011" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_11>
+  <texture_20_12>
+    <texture value="20_12" />
+    <MainTitle value="右驻锄力(20度)" />
+    <VTitle value="右驻锄力(X,Y,Z) (N)" />
+    <Min value="-210000" />
+    <Max value="140000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="2012" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_20_12>
+  <texture_20_13>
+    <texture value="20_13" />
+    <MainTitle value="弹丸章动角(20度)" />
+    <VTitle value="章动角(°)" />
+    <Min value="-20000" />
+    <Max value="60000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="2013" />
+    <K value="6" />
+    <Time value="60000" />
+    <RealTime value="60000" />
+  </texture_20_13>
+  <texture_20_14>
+    <texture value="20_14" />
+    <MainTitle value="弹丸加速度(20度)" />
+    <VTitle value="加速度(g)" />
+    <Min value="-4000" />
+    <Max value="12000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="2013" />
+    <K value="1" />
+    <Time value="1200" />
+    <RealTime value="1200" />
+  </texture_20_14>
+  <texture_20_15>
+    <texture value="20_15" />
+    <MainTitle value="弹丸章动角(20度)" />
+    <VTitle value="章动角(°)" />
+    <Min value="-20000" />
+    <Max value="60000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="2013" />
+    <K value="6" />
+    <Time value="60000" />
+    <RealTime value="49218" />
+  </texture_20_15>
+  <texture_50_1>
+    <texture value="50_1" />
+    <MainTitle value="制退机力(51度)" />
+    <VTitle value="制退机力 (N)" />
+    <Min value="-200000" />
+    <Max value="600000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="DataPoint_ZTJ0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_1>
+  <texture_50_2>
+    <texture value="50_2" />
+    <MainTitle value="复进机力(51度)" />
+    <VTitle value="复进机力z (N)" />
+    <Min value="40000" />
+    <Max value="140000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_FJJ0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_2>
+  <texture_50_3>
+    <texture value="50_3" />
+    <MainTitle value="高平机力(51度)" />
+    <VTitle value="高平机力 (N)" />
+    <Min value="-40000" />
+    <Max value="40000" />
+    <pictureCount value="2" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="503" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_3>
+  <texture_50_4>
+    <texture value="50_4" />
+    <MainTitle value="座圈力(51度)" />
+    <VTitle value="座圈力(X,Y,Z) (N)" />
+    <Min value="-400000" />
+    <Max value="600000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_ZQ_40" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_4>
+  <texture_50_5>
+    <texture value="50_5" />
+    <MainTitle value="座圈力矩(51度)" />
+    <VTitle value="座圈力矩(X,Y,Z) (N·mm)" />
+    <Min value="-200000000" />
+    <Max value="600000000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="DataPoint_ZQ_40" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_5>
+  <texture_50_6>
+    <texture value="50_6" />
+    <MainTitle value="左大架油缸力(51度)" />
+    <VTitle value="左大架油缸力 (N)" />
+    <Min value="0" />
+    <Max value="250000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_DJ_8L0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_6>
+  <texture_50_7>
+    <texture value="50_7" />
+    <MainTitle value="右大架油缸力(51度)" />
+    <VTitle value="右大架油缸力 (N)" />
+    <Min value="0" />
+    <Max value="250000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_DJ_8R0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_7>
+  <texture_50_8>
+    <texture value="50_8" />
+    <MainTitle value="左千斤顶力(51度)" />
+    <VTitle value="左千斤顶力(X,Y,Z) (N)" />
+    <Min value="-40000" />
+    <Max value="160000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_QJD_6L0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_8>
+  <texture_50_9>
+    <texture value="50_9" />
+    <MainTitle value="右千斤顶力(51度)" />
+    <VTitle value="右千斤顶力(X,Y,Z) (N)" />
+    <Min value="-40000" />
+    <Max value="160000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_QJD_6R0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_9>
+  <texture_50_10>
+    <texture value="50_10" />
+    <MainTitle value="座盘力(51度)" />
+    <VTitle value="座盘力(X,Y,Z) (N)" />
+    <Min value="-100000" />
+    <Max value="400000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_DZ_70" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_10>
+  <texture_50_11>
+    <texture value="50_11" />
+    <MainTitle value="左驻锄力(51度)" />
+    <VTitle value="左驻锄力(X,Y,Z) (N)" />
+    <Min value="-180000" />
+    <Max value="120000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_ZC_Left0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_11>
+  <texture_50_12>
+    <texture value="50_12" />
+    <MainTitle value="右驻锄力(51度)" />
+    <VTitle value="右驻锄力(X,Y,Z) (N)" />
+    <Min value="-180000" />
+    <Max value="120000" />
+    <pictureCount value="4" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="DataPoint_ZC_Right0" />
+    <K value="1" />
+    <Time value="15000" />
+    <RealTime value="15000" />
+  </texture_50_12>
+  <texture_50_13>
+    <texture value="50_13" />
+    <MainTitle value="弹丸章动角(51度)" />
+    <VTitle value="章动角(°)" />
+    <Min value="-90000" />
+    <Max value="360000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="BulletCamera0" />
+    <K value="6" />
+    <Time value="120000" />
+    <RealTime value="120000" />
+  </texture_50_13>
+  <texture_50_14>
+    <texture value="50_14" />
+    <MainTitle value="弹丸加速度(51度)" />
+    <VTitle value="加速度(g)" />
+    <Min value="-4000" />
+    <Max value="12000" />
+    <pictureCount value="4" />
+    <hightCount value="4" />
+    <widthCount value="3" />
+    <Key value="BulletCamera0" />
+    <K value="1" />
+    <Time value="1200" />
+    <RealTime value="1200" />
+  </texture_50_14>
+  <texture_50_15>
+    <texture value="50_15" />
+    <MainTitle value="弹丸加速度(51度)" />
+    <VTitle value="加速度(g)" />
+    <Min value="-90000" />
+    <Max value="360000" />
+    <pictureCount value="2" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="BulletCamera0" />
+    <K value="6" />
+    <Time value="120000" />
+    <RealTime value="103909" />
+  </texture_50_15>
+</version>
