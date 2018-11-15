@@ -1,25 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 namespace GD
 {
     /// <summary>
     /// 键入注释
     /// </summary>
-    public class CreatAsset : MonoBehaviour
+    public class CreatAsset : ScriptableWizard
     {
 
-        // Use this for initialization
-        void Start()
+        [MenuItem("GD/MyKey #a", false, 14)]
+        public static void MyKey()
         {
-
+            Debug.Log("myKey");
+           // EditorApplication.hie
         }
 
-        // Update is called once per frame
-        void Update()
-        {
 
-        }
     }
     //=======================================================
     // 作者：GD
