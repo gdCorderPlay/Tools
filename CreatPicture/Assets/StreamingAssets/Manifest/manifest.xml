@@ -13,6 +13,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_1>
   <texture_0_2>
     <texture value="0_2" />
@@ -27,6 +28,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_2>
   <texture_0_3>
     <texture value="0_3" />
@@ -41,6 +43,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_3>
   <texture_0_4>
     <texture value="0_4" />
@@ -55,6 +58,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_4>
   <texture_0_5>
     <texture value="0_5" />
@@ -69,6 +73,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_5>
   <texture_0_6>
     <texture value="0_6" />
@@ -83,6 +88,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_6>
   <texture_0_7>
     <texture value="0_7" />
@@ -97,6 +103,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_7>
   <texture_0_8>
     <texture value="0_8" />
@@ -111,6 +118,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_8>
   <texture_0_9>
     <texture value="0_9" />
@@ -125,6 +133,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_9>
   <texture_0_10>
     <texture value="0_10" />
@@ -139,6 +148,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_10>
   <texture_0_11>
     <texture value="0_11" />
@@ -153,6 +163,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_11>
   <texture_0_12>
     <texture value="0_12" />
@@ -167,6 +178,7 @@
     <K value="1" />
     <Time value="18000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_12>
   <texture_0_13>
     <texture value="0_13" />
@@ -181,6 +193,7 @@
     <K value="6" />
     <Time value="1800" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_13>
   <texture_0_14>
     <texture value="0_14" />
@@ -195,6 +208,7 @@
     <K value="1" />
     <Time value="1200" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_0_14>
   <texture_0_15>
     <texture value="0_15" />
@@ -209,7 +223,53 @@
     <K value="6" />
     <Time value="1800" />
     <RealTime value="1758" />
+    <HScale value="10" />
   </texture_0_15>
+  <texture_0_16>
+    <texture value="0_16" />
+    <MainTitle value="弹丸膛内加速度" />
+    <VTitle value="加速度(g)" />
+    <Min value="-2000" />
+    <Max value="8000" />
+    <pictureCount value="3" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="016" />
+    <K value="1" />
+    <Time value="180" />
+    <RealTime value="165" />
+    <HScale value="10" />
+  </texture_0_16>
+  <texture_0_17>
+    <texture value="0_17" />
+    <MainTitle value="弹丸膛内加速度" />
+    <VTitle value="加速度(g)" />
+    <Min value="-1600" />
+    <Max value="2400" />
+    <pictureCount value="3" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="017" />
+    <K value="1" />
+    <Time value="180" />
+    <RealTime value="165" />
+    <HScale value="10" />
+  </texture_0_17>
+  <texture_0_18>
+    <texture value="0_18" />
+    <MainTitle value="弹丸膛内加速度" />
+    <VTitle value="加速度(g)" />
+    <Min value="-1400" />
+    <Max value="2100" />
+    <pictureCount value="3" />
+    <hightCount value="5" />
+    <widthCount value="3" />
+    <Key value="018" />
+    <K value="1" />
+    <Time value="180" />
+    <RealTime value="165" />
+    <HScale value="10" />
+  </texture_0_18>
   <texture_20_1>
     <texture value="20_1" />
     <MainTitle value="制退机力(20度)" />
@@ -223,6 +283,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_20_1>
   <texture_20_2>
     <texture value="20_2" />
@@ -237,6 +298,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_20_2>
   <texture_20_3>
     <texture value="20_3" />
@@ -251,6 +313,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_20_3>
   <texture_20_4>
     <texture value="20_4" />
@@ -265,6 +328,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="18000" />
+    <HScale value="10" />
   </texture_20_4>
   <texture_20_5>
     <texture value="20_5" />
@@ -279,6 +343,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_5>
   <texture_20_6>
     <texture value="20_6" />
@@ -293,6 +358,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_6>
   <texture_20_7>
     <texture value="20_7" />
@@ -307,6 +373,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_7>
   <texture_20_8>
     <texture value="20_8" />
@@ -321,6 +388,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_8>
   <texture_20_9>
     <texture value="20_9" />
@@ -335,6 +403,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_9>
   <texture_20_10>
     <texture value="20_10" />
@@ -349,6 +418,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_10>
   <texture_20_11>
     <texture value="20_11" />
@@ -363,6 +433,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_11>
   <texture_20_12>
     <texture value="20_12" />
@@ -377,6 +448,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_20_12>
   <texture_20_13>
     <texture value="20_13" />
@@ -391,6 +463,7 @@
     <K value="6" />
     <Time value="60000" />
     <RealTime value="60000" />
+    <HScale value="10" />
   </texture_20_13>
   <texture_20_14>
     <texture value="20_14" />
@@ -405,6 +478,7 @@
     <K value="1" />
     <Time value="1200" />
     <RealTime value="1200" />
+    <HScale value="10" />
   </texture_20_14>
   <texture_20_15>
     <texture value="20_15" />
@@ -419,6 +493,7 @@
     <K value="6" />
     <Time value="60000" />
     <RealTime value="49218" />
+    <HScale value="10" />
   </texture_20_15>
   <texture_50_1>
     <texture value="50_1" />
@@ -433,6 +508,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_1>
   <texture_50_2>
     <texture value="50_2" />
@@ -447,6 +523,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_2>
   <texture_50_3>
     <texture value="50_3" />
@@ -461,6 +538,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_3>
   <texture_50_4>
     <texture value="50_4" />
@@ -475,6 +553,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_4>
   <texture_50_5>
     <texture value="50_5" />
@@ -489,6 +568,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_5>
   <texture_50_6>
     <texture value="50_6" />
@@ -503,6 +583,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_6>
   <texture_50_7>
     <texture value="50_7" />
@@ -517,6 +598,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_7>
   <texture_50_8>
     <texture value="50_8" />
@@ -531,6 +613,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_8>
   <texture_50_9>
     <texture value="50_9" />
@@ -545,6 +628,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_9>
   <texture_50_10>
     <texture value="50_10" />
@@ -559,6 +643,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_10>
   <texture_50_11>
     <texture value="50_11" />
@@ -573,6 +658,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_11>
   <texture_50_12>
     <texture value="50_12" />
@@ -587,6 +673,7 @@
     <K value="1" />
     <Time value="15000" />
     <RealTime value="15000" />
+    <HScale value="10" />
   </texture_50_12>
   <texture_50_13>
     <texture value="50_13" />
@@ -600,7 +687,8 @@
     <Key value="BulletCamera0" />
     <K value="6" />
     <Time value="120000" />
-    <RealTime value="120000" />
+    <RealTime value="102756" />
+    <HScale value="10" />
   </texture_50_13>
   <texture_50_14>
     <texture value="50_14" />
@@ -615,19 +703,21 @@
     <K value="1" />
     <Time value="1200" />
     <RealTime value="1200" />
+    <HScale value="10" />
   </texture_50_14>
   <texture_50_15>
     <texture value="50_15" />
     <MainTitle value="弹丸加速度(51度)" />
     <VTitle value="加速度(g)" />
-    <Min value="-90000" />
-    <Max value="360000" />
+    <Min value="-16000" />
+    <Max value="0" />
     <pictureCount value="2" />
-    <hightCount value="5" />
+    <hightCount value="4" />
     <widthCount value="3" />
     <Key value="BulletCamera0" />
     <K value="6" />
-    <Time value="120000" />
-    <RealTime value="103909" />
+    <Time value="1200" />
+    <RealTime value="1165" />
+    <HScale value="1165" />
   </texture_50_15>
 </version>

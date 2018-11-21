@@ -22,6 +22,7 @@ namespace GD
             {
                 rightTitle.SetActive(false);
             }
+            hScale = showPic.hScale;
             maxCount = showPic.maxTime;
             realTime = showPic.realTime;
             mainTitle.text = showPic.mainTitle;
@@ -83,9 +84,6 @@ namespace GD
         }
 
     }
-    //=======================================================
-    // 作者：GD
-    // 始于11/14/2018 4:38:26 PM
-    //=======================================================
+ 
 }
 

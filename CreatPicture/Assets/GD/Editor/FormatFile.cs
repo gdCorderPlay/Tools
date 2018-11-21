@@ -177,6 +177,108 @@ namespace GDEditor
 
         }
 
+        [MenuItem("GD/File/将两个文件拆散叠加")]
+        public static void AddFile()
+        {
+            string filePath = Application.dataPath + "/GD/Add";
+            string outPath = Application.dataPath + "/GD/Out";
+            string[] files = Directory.GetFiles(filePath);
+            int length=-1;
+            List<List<string[]>> filesData = new List<List<string[]>>();
+            for (int i = 0; i < files.Length; i++)
+            {
+                if (files[i].EndsWith(".txt"))
+                {
+                    string[] lines = File.ReadAllLines(files[i]);
+                    List<string[]> lineList = new List<string[]>();
+
+                    for(int j = 0; j < lines.Length; j++)
+                    {
+                        lineList.Add(lines[j].Split(','));
+                    }
+                    filesData.Add(lineList);
+                    ///取出最短的数据行
+                    if (length < 0)
+                    {
+                        length = lines.Length;
+                    }
+                    else if(length> lines.Length)
+                    {
+                        length = lines.Length;
+                    }
+                }
+            }
+           // List<string[]> outFilesData = new List<string[]>();
+            
+            for(int index = 1; index <= 3; index++)
+            {
+                string[] outLines = new string[length];
+                ///重新赋值
+                for (int i = 0; i < filesData.Count; i++)
+                {
+                    for (int j = 0; j < length; j++)
+                    {
+                        outLines[j]  +=  "," + filesData[i][j][index];
+                    }
+                }
+                File.WriteAllLines(outPath + "/" + index + ".txt", outLines);
+                DataBase.Refresh();
+            }
+        }
+        [MenuItem("GD/File/将文件放大")]
+        public static void ScaleFile()
+        {
+            string filePath = Application.dataPath + "/GD/Scale";
+            string outPath = Application.dataPath + "/GD/Out";
+            string[] files = Directory.GetFiles(filePath);
+
+            for (int i = 0; i < files.Length; i++)
+            {
+                if (files[i].EndsWith(".txt"))
+                {
+                    string[] lines = File.ReadAllLines(files[i]);
+                    int length = lines.Length;
+                    string[] outFile = new string[(length-1)*100+1];
+                    
+                    for(int j=0;j<length-1; j++)
+                    {
+                        string[] strs = lines[j].Split(',');
+                        float num1Start = float.Parse(strs[0]);
+                        float num2Start= float.Parse(strs[1]);
+                       
+                        string[] strs2 = lines[j+1].Split(',');
+                        float num1End = float.Parse(strs2[0]);
+                        float num2End = float.Parse(strs2[1]);
+
+                        float scale1 = (num1End - num1Start) / 100;
+                        float scale2 = (num2End - num2Start) / 100;
+
+                        for(int k=0;k<100;k++)
+                        {
+                            num1Start += k * scale1;
+                            num2Start += k * scale2;
+                            outFile[j * 100 + k] = num1Start + "," + scale2;
+
+                        }
+                    }
+                    outFile[(length - 1) * 100] = lines[length - 1];
+                    File.WriteAllLines(outPath + "/1.txt", outFile);
+                    DataBase.Refresh();
+                }
+
+            }
+            }
+        [MenuItem("GD/File/读取html")]
+        public static void Test()
+        {
+            string filePath = Application.dataPath + "/GD/html.html";
+
+            string context = File.ReadAllText(filePath);
+
+            Debug.Log(context);
+
+        }
+
     }
 }
 

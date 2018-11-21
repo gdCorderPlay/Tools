@@ -2,17 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class VItem : MonoBehaviour {
+namespace GD
+{
 
-     Text text;
-    private void Start()
+    public class VItem : MonoBehaviour
     {
-        text = transform.GetComponentInChildren<Text>();
-    }
-    public void SetItem(string  showInfo )
-    {
-        if(text==null)
+
+        Text text;
+        private void Start()
+        {
             text = transform.GetComponentInChildren<Text>();
-        text.text = showInfo;
+        }
+        public void SetItem(string showInfo)
+        {
+            if (text == null)
+                text = transform.GetComponentInChildren<Text>();
+            text.text = showInfo;
+        }
     }
 }
