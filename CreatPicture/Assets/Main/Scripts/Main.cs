@@ -10,16 +10,25 @@ namespace GD
 
 
         // public Texture2D texture;
+        [Header("线条颜色 会忽略透明通道为0的颜色")]
         public Color[] color;
+        [Header("生成图片的背景颜色")]
         public Color bg;
+        [Header("生成图片的宽度")]
         public int width;
+        [Header("生成图片的高度")]
         public int hight;
         private int origin;
         public string text;
         public int index;
         private string path;
         Vector3 _pos1;
-
+        [Header("生成图片的随机范围最小值")]
+        public float minScale;
+        [Header("生成图片的随机范围最大值")]
+        public float maxScale;
+        [Header("生成图片的每个点的大小 pixelWidth*pixelWidth")]
+        public int pixelWidth;
         private Dictionary<int, Vector3> pointDic;
         private void Start()
         {
@@ -95,9 +104,9 @@ namespace GD
                     if (files[j].EndsWith(".txt")|| files[j].EndsWith(".csv"))
                     {
                         string str = files[j].Substring(directories[i].Length + 1);
-                        str = str.Trim('.', 't', 'x');
+                        str = str.Trim('.', 't', 'x','c','s','v');
                         str = head + "_" + str;
-                        List<List<float>> pics = Reader.instance.GetData(files[j], str, hight);
+                        List<List<float>> pics = Reader.instance.GetData(files[j], str, hight, minScale, maxScale);
                         // Debug.Log(str);
                         Creat(str, pics, Reader.instance.scale, Reader.instance.offset, Reader.instance.offsetPic, (int)Reader.instance.width);
 
@@ -106,6 +115,7 @@ namespace GD
 
             }
         }
+
         void Creat(string name, List<List<float>> data, int scale, int offset, int offsetPic, int dataWidth)
         {
             if (scale <= 0)
@@ -156,7 +166,7 @@ namespace GD
             {
                 for (int y = start; y <= end; y++)
                 {
-                    RenderPoint(x, y, 4, texture1);
+                    RenderPoint(x, y, pixelWidth, texture1);
                     //texture1.SetPixel(x, y, color);
                 }
             }
@@ -165,19 +175,21 @@ namespace GD
 
                 for (int y = start; y >= end; y--)
                 {
-                    RenderPoint(x, y, 4, texture1);
+                    RenderPoint(x, y, pixelWidth, texture1);
                     //texture1.SetPixel(x, y, color);
                 }
             }
             start = end;
         }
+       
         private void Render(int x, ref int start, int end, Texture2D texture1, Color _color)
         {
             if (start < end)
             {
                 for (int y = start; y <= end; y++)
                 {
-                    RenderPoint(x, y, 1, texture1, _color);
+
+                    RenderPoint(x, y, pixelWidth, texture1, _color);
                     //texture1.SetPixel(x, y, color);
                 }
             }
@@ -186,7 +198,7 @@ namespace GD
 
                 for (int y = start; y >= end; y--)
                 {
-                    RenderPoint(x, y, 1, texture1, _color);
+                    RenderPoint(x, y, pixelWidth, texture1, _color);
                     //texture1.SetPixel(x, y, color);
                 }
             }
@@ -210,7 +222,12 @@ namespace GD
             {
                 for (int j = 0; j < count; j++)
                 {
-                    texture1.SetPixel(x + i, (int)(y + j), _color);
+                    // texture1.GetPixel(x + i, (int)(y + j));
+                    if (_color.a != 0)
+                    {
+                        texture1.SetPixel(x + i, (int)(y + j), _color);
+                    }
+                  
                 }
             }
 

@@ -19,8 +19,10 @@ namespace GD
             Debug.Log("*******************" + key);
             if (keyToPic == null)
                 keyToPic = Reader.instance.ReadXmlForDic();
+          
             if (!keyToPic.ContainsKey(key))
                 return;
+           // Debug.Log(key);
             List<PictureItemData> showPics = keyToPic[key];
             for (int i = 0; i < views.Count; i++)
             {
@@ -54,6 +56,7 @@ namespace GD
 
 
        public int amount = 0;
+        
         private void Update()
         {
             if (Input.GetKey(KeyCode.Space))

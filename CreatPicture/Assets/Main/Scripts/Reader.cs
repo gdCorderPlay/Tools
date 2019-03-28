@@ -45,17 +45,18 @@ namespace GD
         public int scale;
         public int offset;
         public int offsetPic;
-        public List<List<float>> GetData(string filePath, string saveName, int hight = 600)
+        public List<List<float>> GetData(string filePath, string saveName, int hight = 600,float minscale=1,float maxScale=1)
         {
+            char splitChar = ',';
             int k = 1;
             // string text = Application.streamingAssetsPath + "/Config/" + fileName + ".txt";
             string text = filePath;
             string[] lines = File.ReadAllLines(text);
 
-            int length = lines[0].Split(',').Length;
-            Debug.Log(filePath+lines[0]);
+            int length = lines[0].Split(splitChar).Length;
+            Debug.Log(filePath+"::::::"+lines[2]);
           //  return null;
-            max = float.Parse(lines[1].Split(',')[1]) * k;
+            max = float.Parse(lines[1].Split(splitChar)[1]) * k;
             min = max;
             List<List<float>> pictureDatas = new List<List<float>>();
             for (int i = 0; i < length; i++)
@@ -64,11 +65,12 @@ namespace GD
             }
             for (int i = 0; i < lines.Length; i++)
             {
-                string[] strs = lines[i].Split(',');
+                string[] strs = lines[i].Split(splitChar);
 
                 for (int j = 1; j < strs.Length; j++)
                 {
                     float data = float.Parse(strs[j]) * k;
+                  //  data *= Random.Range(minscale, maxScale);
                     if (data > max)
                     {
                         max = data;
@@ -77,8 +79,59 @@ namespace GD
                     {
                         min = data;
                     }
+                   
                     pictureDatas[j - 1].Add(data);
                 }
+
+
+            }
+            if (minscale == 1 && maxScale == 1)
+            {
+            }
+            else
+            {
+                for (int i = 0; i < length; i++)
+                {
+                    pictureDatas.Add(new List<float>());
+                }
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    string[] strs = lines[i].Split(splitChar);
+
+                    for (int j = 1; j < strs.Length; j++)
+                    {
+                        float data = float.Parse(strs[j]) * k;
+                         data *= Random.Range(minscale, maxScale);
+                        if (data > max)
+                        {
+                            max = data;
+                        }
+                        else if (data < min)
+                        {
+                            min = data;
+                        }
+
+                        pictureDatas[strs.Length+j - 2].Add(data);
+                    }
+
+
+                }
+
+                //for (int j = 1; j < strs.Length; j++)
+                //{
+                //    float data = float.Parse(strs[j]) * k;
+                //    data *= Random.Range(minscale, maxScale);
+                //    if (data > max)
+                //    {
+                //        max = data;
+                //    }
+                //    else if (data < min)
+                //    {
+                //        min = data;
+                //    }
+
+                //    pictureDatas[j - 1].Add(data);
+                //}
             }
             if (max - min < 10)
             {
@@ -276,6 +329,7 @@ namespace GD
                 }
                 dic[pic.key].Add(pic);
             }
+            Debug.Log("读取配置信息");
             return dic;
         }
         /// <summary>
@@ -298,6 +352,7 @@ namespace GD
             string path = Application.streamingAssetsPath + "/Manifest/manifest.xml";
 
             XDocument xd = XDocument.Load(path);
+            Debug.Log(data.texture);
             xd.Root.Element(picname).Element("texture").Attribute("value").SetValue(data.texture);
             xd.Root.Element(picname).Element("Min").Attribute("value").SetValue(data.minValue.ToString());
             xd.Root.Element(picname).Element("Max").Attribute("value").SetValue(data.maxValue.ToString());

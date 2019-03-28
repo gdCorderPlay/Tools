@@ -80,11 +80,11 @@ namespace GD
             for (int i = 0; i < showPic.widthCount; i++)
             {
                 hItems[i].gameObject.SetActive(true);
-                float vValue = (showNum * i) / (1000f* hScale);
+                float vValue = (showNum * i) / (100f* hScale);
                 hItems[i].SetItem(vValue.ToString());
             }
             hItems[showPic.widthCount].gameObject.SetActive(true);
-            hItems[showPic.widthCount].SetItem((showPic.maxTime / (1000f*hScale)).ToString());
+            hItems[showPic.widthCount].SetItem((showPic.maxTime / (100f*hScale)).ToString());
 
             StartCoroutine(WWW_Tex("file://" + Application.streamingAssetsPath + "/Texture/" + showPic.texture + ".png"));
 
@@ -123,6 +123,7 @@ namespace GD
             if (www.isDone && www.error == null)
             {
                 // wwwTexture   value  value= www.texture;
+                Debug.Log("加载图片"+url);
                 view.texture = www.texture;
             }
         }
